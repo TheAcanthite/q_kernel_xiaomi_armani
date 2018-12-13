@@ -1364,6 +1364,7 @@ void msm_isp_end_avtimer(void)
 
 int msm_isp_close_node(struct v4l2_subdev *sd, struct v4l2_subdev_fh *fh)
 {
+	int rc = 0;
 	struct vfe_device *vfe_dev = v4l2_get_subdevdata(sd);
 	mutex_lock(&vfe_dev->realtime_mutex);
 	mutex_lock(&vfe_dev->core_mutex);
