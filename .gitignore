@@ -92,3 +92,6 @@ kernel/hz.bc
 firmware/ist30xx_wintek.cms
 
 \#*#
+
+#out
+out
