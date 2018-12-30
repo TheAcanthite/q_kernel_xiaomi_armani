@@ -1,5 +1,4 @@
 /* Copyright (c) 2013, The Linux Foundation. All rights reserved.
- * Copyright (C) 2015 XiaoMi, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -31,7 +30,7 @@ static void msm_led_torch_brightness_set(struct led_classdev *led_cdev,
 };
 
 static struct led_classdev msm_torch_led = {
-	.name			= "flashlight",
+	.name			= "torch-light",
 	.brightness_set	= msm_led_torch_brightness_set,
 	.brightness		= LED_OFF,
 };
